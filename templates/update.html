@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% block tittle %} - Update{% endblock tittle %}
+
+
+{% block body %}
+     
+    <div class="container p-1">
+    <div class='container my-5'>
+        <h3>Update Todo</h3>
+       <form action='/update/{{todo.sno}}', method="POST">
+        <div class="container py-1">
+        <div class="form-group">
+          <label for="TTitle">Todo Title</label>
+          <input type="text" class="form-control" name='title' id="TTitle" value="{{todo.title}}" placeholder="Enter Todo Title">
+        </div>
+        <div class="form-group">
+          <label for="TDesc">Todo Description</label>
+          <input type="text" class="form-control" name='desc' id="TDesc" value="{{todo.desc}}" placeholder="Enter Todo Description">
+        </div>
+        <button type="submit" class="btn btn-dark">update</button>
+        </div>
+       </form>
+    </div>
+    </div>
+
+{% endblock body %} 
