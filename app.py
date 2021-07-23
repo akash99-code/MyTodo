@@ -3,7 +3,7 @@ from flask_sqlalchemy import SQLAlchemy
 from datetime import datetime
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = "sqlite:///todo.db"
+app.config['SQLALCHEMY_DATABASE_URI'] = "mysql://uihae55bcmuookvf:F5goyzstTKemfVKaAbni@btkizsgro0w40jw3ez7d-mysql.services.clever-cloud.com:3306/btkizsgro0w40jw3ez7d"
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
 
